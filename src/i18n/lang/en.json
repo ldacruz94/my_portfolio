@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "name": "Lucas Da Cruz",
+        "about": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "resume": "Resume",
+        "contact": {
+            "text": "Contact Me",
+            "email": "mailto:lucaspavesi11@gmail.com"
+        }
+    },
+    "contact_menu": {
+        "title": "Contact Form",
+        "form": {
+            "email": "Email",
+            "body": "Message",
+            "submit": "Send Message"
+        }
+    }
+}
