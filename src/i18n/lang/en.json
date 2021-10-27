@@ -16,6 +16,10 @@
             "email": "Email",
             "body": "Message",
             "submit": "Send Message"
-        }
+        },
+        "alert_msg": "Successfully sent message!"
+    },
+    "about": {
+        "intro": "Hi, my name is Lucas Da Cruz!"
     }
 }

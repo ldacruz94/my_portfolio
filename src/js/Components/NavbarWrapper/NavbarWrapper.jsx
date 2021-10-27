@@ -1,8 +1,12 @@
 import { Container, Navbar, Nav, Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-const NavbarWrapper = () => {
+const NavbarWrapper = (props) => {
     const { t } = useTranslation();
+
+    const handleContactBtnClick = () => {
+        props.showContactMenu(true);
+    }
 
     return ( 
         <Navbar bg="light" expand="lg">
@@ -17,7 +21,7 @@ const NavbarWrapper = () => {
                     </Nav>
                     <Nav className="d-flex">
                         <Nav.Link href="#resume">{t('navbar.resume')}</Nav.Link>
-                        <Button variant="outline-primary">{t('navbar.contact.text')}</Button>
+                        <Button variant="outline-primary" onClick={handleContactBtnClick}>{t('navbar.contact.text')}</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
