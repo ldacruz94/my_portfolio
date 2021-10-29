@@ -20,6 +20,11 @@
         "alert_msg": "Successfully sent message!"
     },
     "about": {
-        "intro": "Hi, my name is Lucas Da Cruz!"
+        "intro": "Hi, my name is Lucas Da Cruz!",
+        "ctct": "Constant Contact. ",
+        "body_pt1": "I'm a Full Stack Software Engineer from Massachussetts, US.",
+        "body_pt2": "I currently work as an Associate Software Engineer at ",
+        "body_pt3": "I have a focus on backend development and automation.",
+        "body_pt4": "In my spare time, I like to read books on CS-related topics, create web applications, and experiment with different technologies."
     }
 }

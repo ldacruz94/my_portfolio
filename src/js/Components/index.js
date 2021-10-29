@@ -1,10 +1,11 @@
-import NavbarWrapper from './NavbarWrapper';
-import AboutMe from './AboutMe';
-import ContactMenu from './ContactMenuForm';
-
+import AboutMe from './about_me';
+import ContactMenu from './contact_menu_form';
+import SkillsSection from './skills_section';
+import Space from './utils';
 
 export { 
-    NavbarWrapper, 
     AboutMe,
-    ContactMenu
+    ContactMenu,
+    SkillsSection,
+    Space,
 };
