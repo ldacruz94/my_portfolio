@@ -8,7 +8,11 @@
 }
 
 p {
-  font-size: 26px;
+  font-size: 21px;
+}
+
+h1:hover, p:hover {
+  color: grey;
 }
 
 .icon:hover {

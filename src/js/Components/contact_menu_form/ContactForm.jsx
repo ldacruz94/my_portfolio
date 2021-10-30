@@ -31,13 +31,17 @@ const ContactForm = () => {
                     label={t('contact_menu.form.email')} 
                     className="mb-3"
                 >
-                    <Form.Control size="sm" type="email" />
+                    <Form.Control size="sm" type="email" required/>
+                </FloatingLabel>
+                <FloatingLabel
+                    controlId="floatingInput"
+                    label={t('contact_menu.form.subject')} 
+                    className="mb-3"
+                >
+                    <Form.Control size="sm" type="email" required/>
                 </FloatingLabel>
                 <FloatingLabel label={t('contact_menu.form.body')} className="mb-3">
-                    <Form.Control
-                        as="textarea"
-                        style={{ height: '200px' }}
-                    />
+                    <Form.Control as="textarea" style={{ height: '200px' }} required/>
                 </FloatingLabel>
                 <Button
                     id="submit_btn"

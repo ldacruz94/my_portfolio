@@ -1,19 +1,21 @@
-import { Container, Row, Col, Fade } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
+import { Animated } from "react-animated-css";
 
 const ProjectsPage = () => {
+    const { t } = useTranslation();
 
     return (
-        <Fade appear={true} in={true}>
+        <Animated animationIn="bounceInUp" animationOut="fadeOut" isVisible={true}>
             <Container className="mt-5">
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <h1>To be continued...</h1>
+                        <h1>{t('projects.title')}</h1>
                     </Col>
                 </Row>
             </Container>
-        </Fade>
+        </Animated>
     );
-
 }
 
 export default ProjectsPage;

@@ -4,7 +4,7 @@
         "about": "About Me",
         "projects": "Projects",
         "skills": "Skills",
-        "resume": "Resume",
+        "resume": "Resume (Coming soon)",
         "contact": {
             "text": "Contact Me",
             "email": "mailto:lucaspavesi11@gmail.com"
@@ -14,6 +14,7 @@
         "title": "Contact Form",
         "form": {
             "email": "Email",
+            "subject": "Subject",
             "body": "Message",
             "submit": "Send Message"
         },
@@ -23,9 +24,10 @@
         "intro": "Hi, my name is Lucas Da Cruz!",
         "ctct": "Constant Contact. ",
         "body_pt1": "I'm a Full Stack Software Engineer from Massachussetts, US.",
-        "body_pt2": "I currently work as an Associate Software Engineer at ",
-        "body_pt3": "My focus is primarily on backend development and automation, but I also enjoy learning and using front-end technologies.",
-        "body_pt4": "In my spare time, I like to read books on CS-related topics, create web applications, and experiment with different technologies."
+        "body_pt2": "I currently work as a Software Engineer at ",
+        "body_pt3": "I'm passionate about backend development, process automation, and software architecture. I also enjoy learning about and experimenting with modern frontend tech.",
+        "body_pt4": "In my spare time, I like to read books on CS-related topics and create web applications.",
+        "body_pt5": "I vehemently enjoy learning about software engineering and design in the pursuit of discovering digital solutions that can ease, simplify, and create efficiency for everyday life."
     },
     "skills": {
         "title": "Skills",
@@ -35,7 +37,7 @@
             "python": "Python",
             "php": "PHP",
             "javascript": "Javascript",
-            "bash": "Bash",
+            "bash": "Bash ",
             "html": "HTML",
             "css": "CSS",
             "sql": "SQL"
@@ -62,7 +64,11 @@
             "pycharm": "Pycharm ",
             "vsc": "Visual Studio Code ",
             "splunk": "Splunk ",
-            "new_relic": "New Relic "
+            "new_relic": "New Relic ",
+            "grafana": "Grafana"
         }
+    },
+    "projects": {
+        "title": "Coming soon..."
     }
 }
