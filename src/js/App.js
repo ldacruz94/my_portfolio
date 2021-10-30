@@ -1,15 +1,15 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Fragment } from 'react';
-import { AboutMe, ContactMenu, SkillsSection, Space }  from './components';
-import { useState } from 'react'; 
-import { Fade, Nav, Navbar, Button, Container } from 'react-bootstrap';
+import React, { Fragment, useState } from 'react';
+import { ContactMenu }  from './components';
+import { Nav, Navbar, Button, Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { AboutMePage, ProjectsPage, SkillsPage } from './pages';
 import { 
     Switch, 
     Route,
     BrowserRouter as Router,
-    Link 
+    Link,
+    Redirect
 } from "react-router-dom"; 
 
 const App = () => {
@@ -23,42 +23,35 @@ const App = () => {
   return (
     <Router>
       <Navbar bg="light" expand="lg">
-          <Container>
-              <Navbar.Brand>{t('navbar.name')}</Navbar.Brand>
-              <Navbar.Collapse>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                  <Nav className="me-auto">
-                      <Nav.Link>
-                          <Link to="/about">{t('navbar.about')}</Link>
-                      </Nav.Link>
-                      <Nav.Link>
-                          <Link to="/skills">{t('navbar.skills')}</Link>
-                      </Nav.Link>
-                      <Nav.Link>
-                          <Link to="/projects">{t('navbar.projects')}</Link>
-                      </Nav.Link>
-                  </Nav>
-                  <Nav className="d-flex">
-                      <Nav.Link>{t('navbar.resume')}</Nav.Link>
-                      <Button variant="outline-primary" onClick={handleContactMenuRender}>{t('navbar.contact.text')}</Button>
-                  </Nav>
+        <Container>
+            <Navbar.Brand>{t('navbar.name')}</Navbar.Brand>
+            <Navbar.Collapse>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Nav className="me-auto">
+                <Nav.Link as={Link} to="/about">
+                  {t('navbar.about')}
+                </Nav.Link>
+                <Nav.Link as={Link} to="/skills">
+                  {t('navbar.skills')}
+                </Nav.Link>
+                <Nav.Link as={Link} to="/projects">
+                  {t('navbar.projects')}
+                </Nav.Link>
+              </Nav>
+                <Nav className="d-flex">
+                    <Nav.Link>{t('navbar.resume')}</Nav.Link>
+                    <Button variant="outline-primary" onClick={handleContactMenuRender}>{t('navbar.contact.text')}</Button>
+                </Nav>
               </Navbar.Collapse>
           </Container>
       </Navbar>
       <Fragment>
           <ContactMenu show={showContactMenu} showContactMenu={handleContactMenuRender} />
-          <Space size={1} />
           <Switch>
-              <Route path="/about">
-                  <Fade appear={true} in={true}>
-                      <AboutMe />
-                  </Fade>
-              </Route>
-              <Route path="/skills">
-                  <Fade appear={true} in={true}>
-                      <SkillsSection />
-                  </Fade>
-              </Route>
+              <Route exact path="/"><Redirect to="/about"/></Route>
+              <Route exact path="/about" component={AboutMePage} />
+              <Route exact path="/skills" component={SkillsPage} />
+              <Route exact path="/projects" component={ProjectsPage} />
           </Switch>
       </Fragment>
     </Router>

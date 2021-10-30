@@ -24,7 +24,45 @@
         "ctct": "Constant Contact. ",
         "body_pt1": "I'm a Full Stack Software Engineer from Massachussetts, US.",
         "body_pt2": "I currently work as an Associate Software Engineer at ",
-        "body_pt3": "I have a focus on backend development and automation.",
+        "body_pt3": "My focus is primarily on backend development and automation, but I also enjoy learning and using front-end technologies.",
         "body_pt4": "In my spare time, I like to read books on CS-related topics, create web applications, and experiment with different technologies."
+    },
+    "skills": {
+        "title": "Skills",
+        "languages": {
+            "title": "Languages",
+            "java": "Java",
+            "python": "Python",
+            "php": "PHP",
+            "javascript": "Javascript",
+            "bash": "Bash",
+            "html": "HTML",
+            "css": "CSS",
+            "sql": "SQL"
+        },
+        "frameworks_and_libraries": {
+            "title": "Frameworks & Libraries",
+            "spring": "Spring ",
+            "spring_boot": "Spring Boot ",
+            "struts": "Struts ",
+            "flask": "Flask ",
+            "bootstrap": "Bootstrap ",
+            "react": "React ",
+            "jquery": "Jquery "
+        },
+        "tools": {
+            "title": "Tools",
+            "jira": "Jira ",
+            "git": "Git ",
+            "github": "Github ",
+            "bitbucket": "BitBucket ",
+            "maven": "Maven ",
+            "jenkins": "Jenkins ",
+            "intellij": "IntelliJ ",
+            "pycharm": "Pycharm ",
+            "vsc": "Visual Studio Code ",
+            "splunk": "Splunk ",
+            "new_relic": "New Relic "
+        }
     }
 }
