@@ -1,4 +1,4 @@
-import ContactMenu from './contact_menu_form';
+import ContactMenu from './contact_menu';
 import Space from './utils';
 
 export { 

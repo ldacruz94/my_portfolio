@@ -1,6 +1,6 @@
 import { Offcanvas } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import ContactForm from './ContactForm';
+import ContactForm from './form';
 
 const ContactMenu = (props) => {
     const { t } = useTranslation();
