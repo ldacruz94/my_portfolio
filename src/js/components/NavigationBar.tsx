@@ -2,6 +2,7 @@ import { Navbar, Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { ContactNav, PageNavGroup } from '.';
 
+
 const NavigationBar = () => {
     const { t } = useTranslation();
 
