@@ -5,5 +5,5 @@ import ProjectsPage from "./projects";
 export {
     AboutMePage,
     SkillsPage,
-    ProjectsPage
+    ProjectsPage,
 };

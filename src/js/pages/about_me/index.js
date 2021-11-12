@@ -1,3 +1,3 @@
-import AboutMePage from './AboutMePage.jsx';
+import AboutMePage from './AboutMePage.tsx';
 
 export default AboutMePage;

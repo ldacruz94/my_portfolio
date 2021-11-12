@@ -1,7 +1,11 @@
-import ContactMenu from './contact_menu';
-import Space from './utils';
+import ContactNav from './ContactNav.tsx';
+import Space from './Space.tsx';
+import NavigationBar from './NavigationBar.tsx';
+import PageNavGroup from './PageNavGroup.tsx';
 
 export { 
-    ContactMenu,
+    ContactNav,
     Space,
+    NavigationBar,
+    PageNavGroup
 };
