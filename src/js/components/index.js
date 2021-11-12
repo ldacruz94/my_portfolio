@@ -2,7 +2,7 @@ import NavigationBar from "./NavigationBar";
 import PageNavGroup from "./PageNavGroup";
 import AboutMeHeader from "./AboutMeHeader";
 import AboutMeTextBody from "./AboutMeTextBody";
-import Skills from './Skills';
+import { FrameworksAndLibraries, Languages, Tools} from './Skills';
 import Space from "./Space";
 import ContactNav from "./ContactNav";
 
@@ -11,7 +11,9 @@ export {
     PageNavGroup,
     AboutMeHeader,
     AboutMeTextBody,
-    Skills,
+    FrameworksAndLibraries,
+    Languages,
+    Tools,
     Space,
     ContactNav
 };
